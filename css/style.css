@@ -138,6 +138,7 @@ body {
     gap: var(--MARGIN);
     width: 88vw;
     margin: 0 auto;
+    margin-top: 4em;
     background-color: var(--BGCOLOR);
     background-image: var(--TBG-STARS-RB);
     color: var(--FONT-COLOR);
