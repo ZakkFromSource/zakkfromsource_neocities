@@ -62,7 +62,7 @@ textarea {
     --IRIDESCENT-COLOR: linear-gradient(to right, hsl(300, 70%, 70%), hsl(350, 80%, 80%), hsl(60, 90%, 80%), hsl(0, 0%, 95%), hsl(200, 60%, 80%), hsl(270, 60%, 75%), hsl(150, 50%, 80%), hsl(340, 60%, 70%), hsl(170, 70%, 60%), hsl(280, 50%, 80%));
 
     /* || TILED BG IMAGES*/
-    --TBG-STARS-RB: url(/assets/images/tiled_background/stars3.gif);
+    --TBG-STARS-RB: url(/zakkfromsource-neocities/assets/images/tiled_background/stars3.gif);
 
     /* || BORDERS */
     /* || STANDARD PADDING */
@@ -108,15 +108,6 @@ html {
 }
 
 /* Styles for the header block */
-.header {
-    margin: calc(var(--MARGIN) + 20px) auto;
-    padding: 2em;
-    width: 70vw;
-    background-color: var(--BGCOLOR);
-    color: var(--FONT-COLOR);
-    position: relative;
-    border-radius: 15px;
-}
 
 .header::after,
 .header::before {
@@ -143,7 +134,8 @@ header::before {
 
 /* Layout styles for the body using CSS Grid */
 body {
-    margin-top: 4em; /* Add top margin to create space above header */
+    margin-top: 4em;
+    /* Add top margin to create space above header */
     display: grid;
     grid-template-rows: auto 1fr auto;
     gap: var(--MARGIN);
@@ -158,7 +150,7 @@ body {
 .header,
 /* Styles for the main content block */
 .main {
-    margin: 0 auto;
+    margin: 1em auto;
     padding: 2em;
     width: 70vw;
     background-color: var(--BGCOLOR);
