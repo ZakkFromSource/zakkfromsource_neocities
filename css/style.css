@@ -133,6 +133,9 @@ html {
 }
 
 body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: var(--MARGIN);
     width: 88vw;
     margin: 0 auto;
     background-color: var(--BGCOLOR);
