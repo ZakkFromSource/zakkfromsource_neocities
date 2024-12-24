@@ -4,39 +4,6 @@
     font-weight: 100 1000;
 }
 
-header {
-    margin: var(--MARGIN) auto;
-    padding: 2em;
-    width: 70vw;
-    background-color: var(--BGCOLOR);
-    color: var(--FONT-COLOR);
-    position: relative;
-    border-radius: 15px;
-}
-
-header::after,
-header::before {
-    content: '';
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    width: calc(100% + 20px);
-    height: calc(100% + 20px);
-    background: var(--IRIDESCENT-COLOR);
-    border-radius: inherit;
-    z-index: -1;
-}
-
-header::before {
-    filter: blur(1.33rem);
-    opacity: 0.5;
-}
-
-header::after {
-    background-size: 400% auto;
-    animation: moveGradient 22s linear infinite;
-}
-
 @font-face {
     font-family: 'PTSansNarrow-Bold';
     src: url(/assets/fonts/PTSansNarrow-Bold.ttf);
@@ -130,6 +97,39 @@ textarea {
 html {
     scroll-behavior: smooth;
     font-family: var(--FF);
+}
+
+header {
+    margin: var(--MARGIN) auto;
+    padding: 2em;
+    width: 70vw;
+    background-color: var(--BGCOLOR);
+    color: var(--FONT-COLOR);
+    position: relative;
+    border-radius: 15px;
+}
+
+header::after,
+header::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    background: var(--IRIDESCENT-COLOR);
+    border-radius: inherit;
+    z-index: -1;
+}
+
+header::before {
+    filter: blur(1.33rem);
+    opacity: 0.5;
+}
+
+header::after {
+    background-size: 400% auto;
+    animation: moveGradient 22s linear infinite;
 }
 
 body {
