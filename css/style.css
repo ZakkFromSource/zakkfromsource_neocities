@@ -1,0 +1,256 @@
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url(/assets/fonts/JetBrainsMono-wght.ttf);
+    font-weight: 100 1000;
+}
+
+@font-face {
+    font-family: 'PTSansNarrow-Bold';
+    src: url(/assets/fonts/PTSansNarrow-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Doto';
+    src: url(/assets/fonts/Doto-VariableFont_ROND\,wght.ttf);
+}
+
+@font-face {
+    font-family: 'Intergalactic Highway';
+    src: url(/assets/fonts/INH_____.TTF);
+}
+
+/* || RESET */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+button,
+textarea {
+    font: inherit;
+}
+
+/* || VARIABLES */
+
+:root {
+
+    /* FONTS */
+
+    --FF: 'JetBrainsMono', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --FF-HEADINGS: 'Intergalactic Highway', 'PTSansNarrow-Bold', 'JetBrainsMono', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --FF-NOTICE: 'Doto', 'JetBrainsMono', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* || COLORS */
+
+    --BGCOLOR: black;
+    --FONT-COLOR: hsl(0, 0%, 75%);
+    --IRIDESCENT-COLOR: linear-gradient(to right, hsl(300, 70%, 70%), hsl(350, 80%, 80%), hsl(60, 90%, 80%), hsl(0, 0%, 95%), hsl(200, 60%, 80%), hsl(270, 60%, 75%), hsl(150, 50%, 80%), hsl(340, 60%, 70%), hsl(170, 70%, 60%), hsl(280, 50%, 80%));
+
+    /* || TILED BG IMAGES*/
+    --TBG-STARS-RB: url(../assets/images/tiled_background/stars3.gif);
+
+    /* || BORDERS */
+    /* || STANDARD PADDING */
+
+    --PADDING-TB: 0.6em;
+    --PADDING-SIDE: 2.5%;
+
+    /* || STANDARD MARGIN */
+
+    --MARGIN: clamp(1em, 2.5vh, 5em) 0;
+
+}
+
+/* || UTILITY CLASSES */
+
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Style for emphasized letters */
+.bionic-bold {
+    font-weight: 1000;
+
+}
+
+/* || GENERAL STYLES */
+
+html {
+    scroll-behavior: smooth;
+    font-family: var(--FF);
+}
+
+body {
+    width: 88vw;
+    margin: 0 auto;
+    background-color: var(--BGCOLOR);
+    background-image: var(--TBG-STARS-RB);
+    color: var(--FONT-COLOR);
+}
+
+main {
+    margin: 0 auto;
+    padding: 2em;
+    width: 70vw;
+    background-color: var(--BGCOLOR);
+    color: var(--FONT-COLOR);
+
+    position: relative;
+    /* Ensure the pseudo-element is positioned within this element */
+
+    border-radius: 15px;
+}
+
+/* Common styles for both ::after and ::before */
+main::after,
+main::before {
+    content: '';
+    position: absolute;
+
+    top: -10px;
+    left: -10px;
+
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+
+    background: var(--IRIDESCENT-COLOR);
+
+    border-radius: inherit;
+    /* Match this with main's border-radius to maintain shape consistency */
+
+    z-index: -1;
+}
+
+/* Blur effect and semi-transparency for ::before */
+main::before {
+    filter: blur(1.33rem);
+    opacity: 0.5;
+}
+
+/* Keyframe animation for background movement */
+@keyframes moveGradient {
+    0% {
+        background-position: left;
+        /* Start at the far left of the gradient */
+    }
+
+    50% {
+        background-position: right;
+        /* Move to the far right of the gradient */
+    }
+
+    100% {
+        background-position: left;
+        /* Return to the far left for a seamless loop */
+    }
+}
+
+main::after {
+    background-size: 400% auto;
+    /* Ensure the gradient can move smoothly within this size */
+
+    animation:
+        moveGradient 22s linear infinite;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--FF-HEADINGS);
+    letter-spacing: 0.175em;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.5rem;
+    padding: var(--PADDING-TB) var(--PADDING-SIDE);
+}
+
+h2 {
+    font-size: 2rem;
+    padding: var(--PADDING-TB) var(--PADDING-SIDE);
+}
+
+p {
+    line-height: 1.4;
+    letter-spacing: 0.175em;
+    text-align: center;
+    padding: var(--PADDING-TB) var(--PADDING-SIDE);
+}
+
+footer {
+    padding: var(--PADDING-TB);
+}
+
+strong {
+    font-weight: 1000;
+    font-size: 1.1rem;
+}
+
+.strong {
+    font-weight: 1000;
+    font-size: 1.1rem;
+}
+
+em {
+    font-weight: 650;
+}
+
+.notice {
+    font-family: var(--FF-NOTICE);
+    font-size: 1.5rem;
+    background-color: hsl(150, 50%, 80%);
+    width: 50%;
+    font-weight: 1000;
+    color: black;
+    outline: 3px solid silver;
+    margin: 1rem auto;
+    border-radius: 15px;
+}
+
+.aesthetic-emphasis {
+    letter-spacing: 0.33em;
+    font-weight: 650;
+}
+
+.aesthetic-emphasis-bold {
+    letter-spacing: 0.33em;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.zfs {
+    font-family: 'PTSansNarrow-Bold', 'JetBrainsMono', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+}
+
+/* || BLOCKS */
+/* || HEADER */
+/* || HERO */
+/* || FOOTER */
+/* || INDIVIDUAL PAGES */
+/* || ELEMENTS */
+/* || MODIFIERS */
