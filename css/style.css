@@ -100,7 +100,7 @@ html {
 }
 
 header {
-    margin: var(--MARGIN) auto;
+    margin: calc(var(--MARGIN) + 20px) auto;
     padding: 2em;
     width: 70vw;
     background-color: var(--BGCOLOR);
