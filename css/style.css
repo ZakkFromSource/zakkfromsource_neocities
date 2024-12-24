@@ -1,3 +1,4 @@
+/* Define custom fonts */
 @font-face {
     font-family: 'JetBrainsMono';
     src: url(/assets/fonts/JetBrainsMono-wght.ttf);
@@ -20,6 +21,7 @@
 }
 
 /* || RESET */
+/* Reset default styles for all elements */
 *,
 *::after,
 *::before {
@@ -28,12 +30,14 @@
     box-sizing: border-box;
 }
 
+/* Ensure images are responsive */
 img {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
+/* Inherit font styles for form elements */
 input,
 button,
 textarea {
@@ -42,6 +46,7 @@ textarea {
 
 /* || VARIABLES */
 
+/* Define CSS variables for fonts, colors, and spacing */
 :root {
 
     /* FONTS */
@@ -73,6 +78,7 @@ textarea {
 
 /* || UTILITY CLASSES */
 
+/* Utility classes for accessibility and layout */
 .offscreen {
     position: absolute;
     left: -10000px;
@@ -87,6 +93,7 @@ textarea {
 }
 
 /* Style for emphasized letters */
+/* Style for emphasized text */
 .bionic-bold {
     font-weight: 1000;
 
@@ -94,12 +101,14 @@ textarea {
 
 /* || GENERAL STYLES */
 
+/* General styles for the document */
 html {
     scroll-behavior: smooth;
     font-family: var(--FF);
 }
 
-header {
+/* Styles for the header block */
+.header {
     margin: calc(var(--MARGIN) + 20px) auto;
     padding: 2em;
     width: 70vw;
@@ -109,8 +118,8 @@ header {
     border-radius: 15px;
 }
 
-header::after,
-header::before {
+.header::after,
+.header::before {
     content: '';
     position: absolute;
     top: -10px;
@@ -127,12 +136,14 @@ header::before {
     opacity: 0.5;
 }
 
-header::after {
+.header::after {
     background-size: 400% auto;
     animation: moveGradient 22s linear infinite;
 }
 
+/* Layout styles for the body using CSS Grid */
 body {
+    margin-top: 4em; /* Add top margin to create space above header */
     display: grid;
     grid-template-rows: auto 1fr auto;
     gap: var(--MARGIN);
@@ -144,8 +155,9 @@ body {
     color: var(--FONT-COLOR);
 }
 
-header,
-main {
+.header,
+/* Styles for the main content block */
+.main {
     margin: 0 auto;
     padding: 2em;
     width: 70vw;
@@ -159,8 +171,8 @@ main {
 }
 
 /* Common styles for both ::after and ::before */
-main::after,
-main::before {
+.main::after,
+.main::before {
     content: '';
     position: absolute;
 
@@ -185,6 +197,7 @@ main::before {
 }
 
 /* Keyframe animation for background movement */
+/* Animation for the iridescent border effect */
 @keyframes moveGradient {
     0% {
         background-position: left;
@@ -202,7 +215,7 @@ main::before {
     }
 }
 
-main::after {
+.main::after {
     background-size: 400% auto;
     /* Ensure the gradient can move smoothly within this size */
 
@@ -211,6 +224,7 @@ main::after {
 }
 
 
+/* Styles for headings */
 h1,
 h2,
 h3,
@@ -223,15 +237,18 @@ h6 {
 }
 
 h1 {
+    /* Main heading style */
     font-size: 3.5rem;
     padding: var(--PADDING-TB) var(--PADDING-SIDE);
 }
 
 h2 {
+    /* Secondary heading style */
     font-size: 2rem;
     padding: var(--PADDING-TB) var(--PADDING-SIDE);
 }
 
+/* Styles for paragraphs */
 p {
     line-height: 1.4;
     letter-spacing: 0.175em;
@@ -239,24 +256,29 @@ p {
     padding: var(--PADDING-TB) var(--PADDING-SIDE);
 }
 
-footer {
+/* Styles for the footer block */
+.footer {
     padding: var(--PADDING-TB);
 }
 
+/* Styles for strong emphasis */
 strong {
     font-weight: 1000;
     font-size: 1.1rem;
 }
 
 .strong {
+    /* Duplicate strong class for emphasis */
     font-weight: 1000;
     font-size: 1.1rem;
 }
 
+/* Styles for emphasized text */
 em {
     font-weight: 650;
 }
 
+/* Styles for notice elements */
 .notice {
     font-family: var(--FF-NOTICE);
     font-size: 1.5rem;
@@ -269,17 +291,20 @@ em {
     border-radius: 15px;
 }
 
+/* Styles for aesthetic emphasis */
 .aesthetic-emphasis {
     letter-spacing: 0.33em;
     font-weight: 650;
 }
 
 .aesthetic-emphasis-bold {
+    /* Bolder aesthetic emphasis */
     letter-spacing: 0.33em;
     font-weight: bolder;
     font-size: 1.5rem;
 }
 
+/* Styles for ZFS class */
 .zfs {
     font-family: 'PTSansNarrow-Bold', 'JetBrainsMono', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.1rem;
