@@ -133,7 +133,7 @@ header::before {
 }
 
 /* Layout styles for the body using CSS Grid */
-body {
+.body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     gap: var(--MARGIN);
@@ -276,15 +276,13 @@ em {
 
 /* Styles for notice elements */
 
-.updates-list li {
-    margin-bottom: 1rem; /* Add spacing between list items */
+.updates-list {
+    margin-top: 0;
 }
 
 .updates-list li {
-    margin-bottom: 1rem; /* Add spacing between list items */
-}
-
-.updates-list p {
+    margin-bottom: 1rem;
+    /* Add spacing between list items */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
