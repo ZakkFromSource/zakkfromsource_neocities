@@ -142,6 +142,7 @@ header::before {
     margin-top: 4em;
     background-color: var(--BGCOLOR);
     background-image: var(--TBG-STARS-RB);
+    background-attachment: fixed;
     color: var(--FONT-COLOR);
 }
 
