@@ -282,6 +282,10 @@ em {
     margin-bottom: 1rem; /* Add spacing between list items */
 }
 
+.updates-list li {
+    margin-bottom: 1rem; /* Add spacing between list items */
+}
+
 .updates-list p {
     margin: 0;
     padding: 0;
