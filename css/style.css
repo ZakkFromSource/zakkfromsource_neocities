@@ -279,10 +279,12 @@ em {
 /* Styles for notice elements */
 
 .updates-list p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: var(--FF-NOTICE);
-    background-color: hsl(150, 50%, 80%);
     font-weight: 1000;
-    color: var(--FONT-COLOR);
+    color: black;
 }
 
 #updates {
@@ -377,9 +379,11 @@ em {
     h1 {
         font-size: 3rem;
     }
+
     h2 {
         font-size: 1.75rem;
     }
+
     .header__nav-list a {
         font-size: 1.75rem;
     }
@@ -389,9 +393,11 @@ em {
     h1 {
         font-size: 2.5rem;
     }
+
     h2 {
         font-size: 1.5rem;
     }
+
     .header__nav-list a {
         font-size: 1.5rem;
     }
@@ -401,9 +407,11 @@ em {
     h1 {
         font-size: 2rem;
     }
+
     h2 {
         font-size: 1.25rem;
     }
+
     .header__nav-list a {
         font-size: 1.25rem;
     }
@@ -413,12 +421,15 @@ em {
     h1 {
         font-size: 1.75rem;
     }
+
     h2 {
         font-size: 1rem;
     }
+
     .header__nav-list a {
         font-size: 1rem;
     }
+
     p {
         font-size: 0.875rem;
     }
