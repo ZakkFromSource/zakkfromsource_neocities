@@ -306,19 +306,29 @@ em {
 /* || HEADER */
 
 .header__nav-list {
-    list-style: none; /* Remove bullet points */
-    display: flex; /* Set as row */
-    justify-content: space-around; /* Automatically calculate even spacing */
-    padding: 0; /* Remove default padding */
+    list-style: none;
+    /* Remove bullet points */
+    display: flex;
+    /* Set as row */
+    justify-content: space-around;
+    /* Automatically calculate even spacing */
+    padding: 0;
+    /* Remove default padding */
 }
 
 .header__nav-list a {
-    text-decoration: none; /* Remove default <a> styling */
-    font-family: var(--FF-HEADINGS); /* Set font family */
-    letter-spacing: 0.175em; /* Set letter spacing */
-    color: var(--FONT-COLOR); /* Set color */
-    font-size: 2rem; /* Set font size */
+    text-decoration: none;
+    /* Remove default <a> styling */
+    font-family: var(--FF-HEADINGS);
+    /* Set font family */
+    letter-spacing: 0.175em;
+    /* Set letter spacing */
+    color: var(--FONT-COLOR);
+    /* Set color */
+    font-size: 2rem;
+    /* Set font size */
 }
+
 /* || HERO */
 /* || FOOTER */
 /* || INDIVIDUAL PAGES */
