@@ -303,7 +303,7 @@ em {
     color: black;
     outline: 3px solid silver;
     margin: 1rem auto;
-    border-radius: 15px;
+    border-radius: 5px;
     height: 2rem;
     overflow: hidden;
     transition: height 0.3s ease;
