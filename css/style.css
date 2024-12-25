@@ -271,6 +271,14 @@ em {
 }
 
 /* Styles for notice elements */
+
+.updates-list {
+    font-family: var(--FF-NOTICE);
+    background-color: hsl(150, 50%, 80%);
+    font-weight: 1000;
+    color: black;
+}
+
 #updates {
     font-family: var(--FF-NOTICE);
     font-size: 1.5rem;
