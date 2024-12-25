@@ -331,47 +331,19 @@ em {
     list-style: none;
     /* Remove bullet points */
     display: flex;
-    /* Set as row */
-    justify-content: space-between;
-    /* Adjust spacing to fit within header */
+    flex-direction: column;
+    align-items: center;
     padding: 0 1rem;
-    /* Add horizontal padding */
     margin: 0;
-    /* Ensure no margin */
     flex-wrap: wrap;
-    /* Allow wrapping on smaller screens */
-}
-
-@media (max-width: 1200px) {
-    .header__nav-list {
-        justify-content: space-around;
-    }
-}
-
-@media (max-width: 992px) {
-    .header__nav-list {
-        justify-content: space-evenly;
-    }
-}
-
-@media (max-width: 768px) {
-    .header__nav-list {
-        flex-direction: column;
-        align-items: center;
-    }
 }
 
 .header__nav-list a {
     text-decoration: none;
-    /* Remove default <a> styling */
     font-family: var(--FF-HEADINGS);
-    /* Set font family */
     letter-spacing: 0.175em;
-    /* Set letter spacing */
     color: var(--FONT-COLOR);
-    /* Set color */
     font-size: 2rem;
-    /* Set font size */
     max-width: 100%;
     word-wrap: break-word;
 }
