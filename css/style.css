@@ -278,11 +278,11 @@ em {
 
 /* Styles for notice elements */
 
-.updates-list {
+.updates-list p {
     font-family: var(--FF-NOTICE);
     background-color: hsl(150, 50%, 80%);
     font-weight: 1000;
-    color: black;
+    color: var(--FONT-COLOR);
 }
 
 #updates {
