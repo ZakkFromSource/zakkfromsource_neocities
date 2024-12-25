@@ -10,4 +10,5 @@
 ## Homepage To-Do
 
 - [ ] - Style Links
-- [ ] - Use Grid or Flexbox to layout page
+- [x] - Use Grid or Flexbox to layout page
+- [ ] - Make updates the same width as body and nav element
