@@ -62,7 +62,7 @@ textarea {
     --IRIDESCENT-COLOR: linear-gradient(to right, hsl(300, 70%, 70%), hsl(350, 80%, 80%), hsl(60, 90%, 80%), hsl(0, 0%, 95%), hsl(200, 60%, 80%), hsl(270, 60%, 75%), hsl(150, 50%, 80%), hsl(340, 60%, 70%), hsl(170, 70%, 60%), hsl(280, 50%, 80%));
 
     /* || TILED BG IMAGES*/
-    --TBG-STARS-RB: url(/zakkfromsource-neocities/assets/images/tiled_background/stars3.gif);
+    --TBG-STARS-RB: url(/assets/images/tiled_background/stars3.gif);
 
     /* || BORDERS */
     /* || STANDARD PADDING */
