@@ -332,10 +332,14 @@ em {
     /* Remove bullet points */
     display: flex;
     /* Set as row */
-    justify-content: space-around;
-    /* Automatically calculate even spacing */
-    padding: 0;
-    /* Remove default padding */
+    justify-content: space-between;
+    /* Adjust spacing to fit within header */
+    padding: 0 1rem;
+    /* Add horizontal padding */
+    margin: 0;
+    /* Ensure no margin */
+    flex-wrap: wrap;
+    /* Allow wrapping on smaller screens */
 }
 
 .header__nav-list a {
