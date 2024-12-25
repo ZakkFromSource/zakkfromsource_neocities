@@ -298,7 +298,7 @@ em {
     font-family: var(--FF-NOTICE);
     font-size: 1.5rem;
     background-color: hsl(150, 50%, 80%);
-    width: 50%;
+    width: 70vw;
     font-weight: 1000;
     color: black;
     outline: 3px solid silver;
