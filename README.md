@@ -10,3 +10,7 @@
 
 - ~~Added Iridescent border colour and removed <br>'s replacing them with padding.~~ 
 - Animated Iridescent Gradient Border added + Starry Tiled Background.
+
+### 24/12/2024 - Third big updated
+
+- Core styling almost complete.
