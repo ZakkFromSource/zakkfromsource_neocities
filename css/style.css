@@ -353,6 +353,30 @@ em {
     word-wrap: break-word;
 }
 
+@media (max-width: 1200px) {
+    .header__nav-list a {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .header__nav-list a {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__nav-list a {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .header__nav-list a {
+        font-size: 1rem;
+    }
+}
+
 /* Responsive styles */
 @media (max-width: 1200px) {
     h1 {
